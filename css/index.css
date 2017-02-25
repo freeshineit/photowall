@@ -20,6 +20,8 @@ h1{
     transition:all 0.5s ease-in; 
     position:absolute; 
     z-index:1;
+    width: 25%;
+    vertical-align: middle;
 }
 .container img:hover{
     box-shadow:15px 15px 20px rgba(50, 50, 50, 0.4); 
@@ -121,15 +123,32 @@ h1{
         height:auto;
         display: block;
         position: static;
+        
+    }
+    .container .img-item{
+        display: block;
+        -webkit-transition:all 0.5s ease-in;
+        -moz-transition:all 0.5s ease-in;
+        transition:all 0.5s ease-in; 
+        overflow: hidden;
+        margin-top:30px;
+    }
+    .container .img-item:hover{
+        -webkit-transform:scale(1); 
+        -moz-transform:scale(1); 
+        transform:scale(1)
     }
     .container img{
         position: static;
-        display: block;
+        vertical-align: middle;
+        display: flex;
+        width: 90%;
         -webkit-transform: rotate(0deg); 
         -moz-transform: rotate(0deg); 
         transform: rotate(0deg);
         font-size:0;
         margin:0 auto;
-        margin-top:30px;
+        
+
     }
 }

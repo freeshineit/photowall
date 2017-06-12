@@ -3,9 +3,16 @@ import Router from 'react-router';
 
 class Index extends React.Component{
 
+    componentDidMount(){
+        fetch('/index')
+            .then(function(res){
+                console.log(res);
+            })
+    }
+
     render(){
         return (
-            <div> sdasdfsad</div>
+            <div></div>
         );
     }
 

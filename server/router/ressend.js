@@ -3,10 +3,10 @@ const router = express.Router();
 
 
 // 该路由使用的中间件
-router.use(function timeLog(req, res, next) {
-  console.log('Time: ', Date.now());
-  next();
-});
+// router.use(function timeLog(req, res, next) {
+//   console.log('Time: ', Date.now());
+//   next();
+// });
 
 router.get('/send',function(req,res,next){
     res.send(new Buffer('whoop'));
